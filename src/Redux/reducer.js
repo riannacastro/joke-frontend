@@ -1,4 +1,4 @@
-function reducer(state = {}, action) {
+function reducer(state = {jokes: []}, action) {
     switch (action.type) {
         case "SET_JOKES":
 

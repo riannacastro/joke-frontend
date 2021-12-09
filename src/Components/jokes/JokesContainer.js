@@ -19,10 +19,16 @@ class JokesContainer extends React.Component {
     }
 }
 
+function mapStateToProps(state) {
+    return {
+        jokes: state.jokes
+    }
+}
+
 function mapDispatchToProps(dispatch) {
     return {
         dispatchSetJokes: (jokes) => dispatch(setJokes(jokes))
     }
 }
 
-export default connect(null, mapDispatchToProps)(JokesContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(JokesContainer)
