@@ -1,0 +1,1 @@
+export const setJokes = (jokes) => ({type: "SET_JOKES", payload: jokes})

@@ -1,8 +1,11 @@
 function reducer(state = {}, action) {
     switch (action.type) {
-        // case value:
+        case "SET_JOKES":
 
-        //   break;
+            return {
+                ...state, 
+                jokes: action.payload
+            };
 
         default:
             return state;
