@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setJokes } from './../../Redux/jokeActions'
+import JokeForm from './JokeForm'
 
 class JokesContainer extends React.Component {
 
@@ -12,6 +13,7 @@ class JokesContainer extends React.Component {
         return (
             <div>
               <h1>ALL JOKES</h1>
+              < JokeForm />
               <div>
                   {this.props.jokes.map(j => <p key={j.id}>{j.joke}</p>)}
               </div>
