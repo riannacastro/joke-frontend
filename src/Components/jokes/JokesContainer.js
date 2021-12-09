@@ -5,9 +5,7 @@ import { setJokes } from './../../Redux/jokeActions'
 class JokesContainer extends React.Component {
 
     componentDidMount() {
-        fetch("https://v2.jokeapi.dev/joke/Programming,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&amount=10")
-        .then(r => r.json())
-        .then(data => this.props.dispatchSetJokes(data.jokes))
+        this.props.dispatchSetJokes()
     }
 
     render(){
@@ -30,7 +28,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        dispatchSetJokes: (jokes) => dispatch(setJokes(jokes))
+        dispatchSetJokes: () => dispatch(setJokes())
     }
 }
 
