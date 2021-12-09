@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { addJoke } from '../../Redux/jokeActions';
+import { connect } from 'react-redux';
 
-export default class JokeForm extends Component {
+class JokeForm extends Component {
     state = {
         joke: ""
     }
@@ -12,17 +14,31 @@ export default class JokeForm extends Component {
         
     }
 
-    handleSubmit = () => {
+    handleSubmit = (e) => {
         e.preventDefault()
+        this.props.addJoke(this.state)
+        this.setState({name: ""})
     }
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label htmlFor="joke-input">Joke:</label>
-                <input id="joke-input" onChange={this.handleChange} type="text" placeholder="Enter joke..." />
+                <input id="joke-input" 
+                    onChange={this.handleChange} 
+                    value={this.state.name} 
+                    type="text" 
+                    placeholder="Enter joke..." />
                 <input type="submit" />
             </form>
         )
     }
 }
+
+function mapDispatchToProps(dispatch) {
+    return {
+        addJoke: (joke) => dispatch(addJoke(joke))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(JokeForm)
