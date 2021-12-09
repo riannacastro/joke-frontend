@@ -5,7 +5,7 @@ export const setJokes = () => {
         .then(jokes => dispatch({type: "SET_JOKES", payload:jokes}))  
     }
 }
-// fetch might need to be localhost 
+
 export const addJoke = (joke) => {
     return (dispatch) => {
         fetch("http://localhost:3000/jokes", {
