@@ -12,9 +12,13 @@ export default class JokeForm extends Component {
         
     }
 
+    handleSubmit = () => {
+        e.preventDefault()
+    }
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <label htmlFor="joke-input">Joke:</label>
                 <input id="joke-input" onChange={this.handleChange} type="text" placeholder="Enter joke..." />
                 <input type="submit" />
