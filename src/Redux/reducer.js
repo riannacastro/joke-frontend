@@ -7,6 +7,13 @@ function reducer(state = {jokes: []}, action) {
                 jokes: action.payload
             };
 
+        case "ADD_JOKE":
+
+            return {
+                ...state,
+                jokes: [...state.jokes, action.payload]
+            }
+
         default:
             return state;
     }
