@@ -17,6 +17,6 @@ export const addJoke = (joke) => {
             body: JSON.stringify(joke)
         })
         .then(r => r.json())
-        .then(data => dispatch({type: "ADD_JOKE", payload: data}))
+        .then(joke => dispatch({type: "ADD_JOKE", payload: joke}))
     }
 }

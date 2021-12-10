@@ -8,16 +8,14 @@ class JokeForm extends Component {
     }
 
     handleChange = (e) => {
-        this.setState({
-            name: e.target.value
-        })
+        this.setState({joke: e.target.value})
         
     }
 
     handleSubmit = (e) => {
         e.preventDefault()
         this.props.addJoke(this.state)
-        this.setState({name: ""})
+        this.setState({joke: ""})
     }
 
     render() {
@@ -26,7 +24,7 @@ class JokeForm extends Component {
                 <label htmlFor="joke-input">Joke:</label>
                 <input id="joke-input" 
                     onChange={this.handleChange} 
-                    value={this.state.name} 
+                    value={this.state.joke} 
                     type="text" 
                     placeholder="Enter joke..." />
                 <input type="submit" />
