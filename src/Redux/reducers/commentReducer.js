@@ -7,13 +7,7 @@ function commentReducer(state = {comments: []}, action) {
                 comments: action.payload
             };
 
-        // case "ADD_JOKE":
-
-        //     return {
-        //         ...state,
-        //         jokes: [...state.jokes, action.payload]
-        //     }
-
+        
         default:
             return state;
     }
