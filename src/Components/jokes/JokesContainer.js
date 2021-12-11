@@ -17,7 +17,7 @@ class JokesContainer extends React.Component {
               < JokeForm />
               <div>
                   {this.props.jokes.map(j => <p key={j.id}>{j.joke}</p>)}
-                  < CommentsContainer />
+                  {/* < CommentsContainer /> */}
               </div>
          </div>
         )

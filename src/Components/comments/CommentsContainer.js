@@ -15,7 +15,7 @@ class CommentsContainer extends Component {
             <div>
                 <h1>Comments:</h1>
                 <div>
-                    {this.props.comments.map(c => <p>{c.comment}</p>)}
+                    {/* {this.props.comments.map(c => <p>{c.comment}</p>)} */}
                 </div>
             </div>
         )
