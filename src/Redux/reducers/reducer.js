@@ -14,6 +14,15 @@ function reducer(state = {jokes: []}, action) {
                 jokes: [...state.jokes, action.payload]
             }
 
+        case "DELETE_JOKE":
+
+            const jokeId = state.jokes.filter(j => j.id !== action.payload)
+
+            return {
+                ...state,
+                jokes: jokeId
+            }
+
         default:
             return state;
     }
