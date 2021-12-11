@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addJoke } from '../../Redux/jokeActions';
+import { addJoke } from '../../Redux/actions/jokeActions';
 import { connect } from 'react-redux';
 
 class JokeForm extends Component {
