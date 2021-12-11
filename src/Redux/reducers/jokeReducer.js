@@ -1,4 +1,4 @@
-function reducer(state = {jokes: []}, action) {
+function jokeReducer(state = {jokes: []}, action) {
     switch (action.type) {
         case "SET_JOKES":
 
@@ -19,4 +19,4 @@ function reducer(state = {jokes: []}, action) {
     }
 }
 
-export default reducer;
+export default jokeReducer;
