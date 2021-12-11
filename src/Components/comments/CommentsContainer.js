@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
-import { connect, createDispatchHook } from 'react-redux';
+import { connect } from 'react-redux';
 import { setComments } from '../../Redux/commentActions';
 
 
 
 class CommentsContainer extends Component {
+
+    componentDidMount() {
+        this.props.dispatchSetComments()
+    }
+
     render() {
         return (
             <div>
                 <h1>Comments:</h1>
+                <div>
+                    {this.props.comments.map(c => <p>{c.comment}</p>)}
+                </div>
             </div>
         )
+    }
+}
+
+function mapStateToProps(state) {
+    return {
+        comments: state.comments
     }
 }
 
@@ -20,4 +34,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(null, mapDispatchToProps)(CommentsContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CommentsContainer);
