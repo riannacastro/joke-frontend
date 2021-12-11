@@ -20,3 +20,13 @@ export const addJoke = (joke) => {
         .then(joke => dispatch({type: "ADD_JOKE", payload: joke}))
     }
 }
+
+export const deleteJoke = (id) => {
+    return (dispatch) => {
+        fetch(`http://localhost:3000/jokes/${id}`, {
+            method: "DELETE"
+        })
+        .then(r => r.json())
+        .then(data => dispatch({type: "DELETE_JOKE", payload: id}))
+    }
+}
