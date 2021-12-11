@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { connect, createDispatchHook } from 'react-redux';
 import { setComments } from '../../Redux/commentActions';
+
 
 
 class CommentsContainer extends Component {
@@ -12,4 +13,11 @@ class CommentsContainer extends Component {
         )
     }
 }
-export default connect()(CommentsContainer);
+
+function mapDispatchToProps(dispatch) {
+    return {
+        dispatchSetComments: () => dispatch(setComments())
+    }
+}
+
+export default connect(null, mapDispatchToProps)(CommentsContainer);
