@@ -6,11 +6,20 @@ import Pages from './Components/Pages';
 function App() {
   return (
     <div className="App">
-      <NavLink to="/">Home</NavLink> 
+      <NavLink 
+      to="/"
+      className={isActive => isActive ? "selected" : ""}
+      >Home</NavLink> 
       <br />
-      <NavLink to="/jokes">Jokes</NavLink>
+      <NavLink 
+      to="/jokes"
+      className={isActive => isActive ? "selected" : ""}
+      >Jokes</NavLink>
       <br />
-      <NavLink to="/new">New Joke</NavLink>
+      <NavLink 
+      to="/new"
+      className={isActive => isActive ? "selected" : ""}
+      >New Joke</NavLink>
       <Pages />
     </div>
   );

@@ -3,6 +3,10 @@ body {
     text-align: center;
 }
 
+.App {
+    background-color: white;
+}
+
 .joke-card {
     border-style: solid;
     background-color: antiquewhite;

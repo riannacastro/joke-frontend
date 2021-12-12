@@ -8,12 +8,10 @@ import JokesContainer from './jokes/JokesContainer'
 
 export default function Pages() {
     return (
-        <div className="nav-bar">
             <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/jokes" component={routerProps => < JokesContainer routerProps={routerProps}/>}/>
             <Route path="/new" component={routerProps => < JokeForm routerProps={routerProps}/>}/>
             </Switch>
-        </div>
     )
 }
