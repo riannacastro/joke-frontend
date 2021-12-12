@@ -2,11 +2,37 @@ body {
     background-color: burlywood;
     text-align: center;
 }
-
-.App {
+.nav-bar{
     background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 15px;
 }
 
+#home-link {
+    margin: 30px;
+}
+
+#jokes-link {
+    margin: 30px;
+}
+
+#new-link {
+   margin: 30px;
+}
+
+.selected {
+    color: blue;
+}
+
+.home-cont {
+    border-style: solid;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+}
 .joke-card {
     border-style: solid;
     background-color: antiquewhite;
@@ -24,6 +50,7 @@ body {
     border-style: solid;
     background-color: rgb(249, 215, 167);
     display: inline-block;
-    padding: 40px;
+    padding: 50px;
+    margin: 50px;
     border-radius: 3px;
 }
