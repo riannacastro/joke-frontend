@@ -2,14 +2,15 @@ import React from 'react'
 import { deleteJoke } from '../../Redux/actions/jokeActions';
 import { connect } from 'react-redux';
 
-function JokeCard({joke}) {
+function JokeCard(props) {
     function handleDelete() {
-
+        props.dispatchDeleteJoke(props.id)
     }
 
     return (
-        <div>
-            <p>{joke}</p><button onClick={handleDelete}>delete</button>
+        <div key={props.id} className="joke-card">
+            {props.joke} <br />
+            <button onClick={handleDelete}>delete</button>
         </div>
     )
 }

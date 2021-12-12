@@ -1,0 +1,12 @@
+.joke-card {
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 2%;
+    margin: 10px;
+    height: 150px;
+    width: 20%;
+    float: left;
+    box-shadow: black;
+
+}
