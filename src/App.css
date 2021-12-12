@@ -1,29 +1,37 @@
 body {
-    background-color: burlywood;
+    background-image: url(./images/cat.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    /* background-color: burlywood; */
     text-align: center;
 }
 .nav-bar{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    padding: 15px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    min-height: 8vh;
+    justify-content: space-around;
 }
 
-#home-link {
-    margin: 30px;
-}
 
-/* #home-link:link, #home-link:visited  {
+#home-link:link {
     background-color: white;
     color: black;
+    text-decoration: none;
+    font-weight: bold;
     border-style: solid;
     border-color: black;
     border-radius: 2px;
     padding: 10px 20px;
     display: inline-block;
 }
+
 #jokes-link:link, #jokes-link:visited {
     background-color: white;
     color: black;
+    text-decoration: none;
+    font-weight: bold;
     border-style: solid;
     border-color: black;
     border-radius: 2px;
@@ -33,19 +41,13 @@ body {
 #new-link:link, #new-link:visited {
     background-color: white;
     color: black;
+    text-decoration: none;
+    font-weight: bold;
     border-style: solid;
     border-color: black;
     border-radius: 2px;
     padding: 10px 20px;
-    display: inline-block;
-} */
-
-#jokes-link {
-    margin: 30px;
-}
-
-#new-link {
-   margin: 30px;
+    display: inline;
 }
 
 /* .selected {
