@@ -14,7 +14,9 @@ export const addJoke = (joke) => {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-            body: JSON.stringify(joke)
+            body: JSON.stringify({
+                 joke: joke
+            })
         })
         .then(r => r.json())
         .then(joke => dispatch({type: "ADD_JOKE", payload: joke}))

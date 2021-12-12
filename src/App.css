@@ -3,7 +3,6 @@ body {
     text-align: center;
 }
 .nav-bar{
-    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     padding: 15px;
@@ -13,6 +12,34 @@ body {
     margin: 30px;
 }
 
+/* #home-link:link, #home-link:visited  {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+#jokes-link:link, #jokes-link:visited {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+#new-link:link, #new-link:visited {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    padding: 10px 20px;
+    display: inline-block;
+} */
+
 #jokes-link {
     margin: 30px;
 }
@@ -21,9 +48,9 @@ body {
    margin: 30px;
 }
 
-.selected {
+/* .selected {
     color: blue;
-}
+} */
 
 .home-cont {
     border-style: solid;

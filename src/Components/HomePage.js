@@ -5,6 +5,8 @@ export default class HomePage extends Component {
         return (
             <div className="home-cont">
                 <h1>Welcome to the Jokester!</h1>
+                <br />
+                <h2>Have a great laugh!</h2>
             </div>
         )
     }
