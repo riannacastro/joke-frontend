@@ -22,6 +22,7 @@ class JokeForm extends Component {
     render() {
         return (
             <form className="joke-form" onSubmit={this.handleSubmit}>
+                <h2>Have a new joke? <br/> Enter it here!</h2>
                 <label htmlFor="joke-input">New Joke: </label>
                 <input id="joke-input" 
                     onChange={this.handleChange} 
