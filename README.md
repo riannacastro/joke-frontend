@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Jokester App
+For my final project at Flatiron School, I created a Jokester application. You will be able to view different jokes, add a new joke, and delete a joke. You can learn more about the reasoning behind the creation of the app by clicking the "about" page. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
+1. Download the backend repository and follow backend steps first:
+Link to backend repository: https://github.com/riannacastro/joke-backend
 
-In the project directory, you can run:
 
 ### `npm start`
 
