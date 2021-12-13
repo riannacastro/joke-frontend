@@ -27,7 +27,7 @@ body {
     display: inline-block;
 }
 
-#jokes-link:link, #jokes-link:visited {
+#jokes-link:link {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -38,7 +38,7 @@ body {
     padding: 10px 20px;
     display: inline-block;
 }
-#new-link:link, #new-link:visited {
+#new-link:link {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -63,7 +63,7 @@ body {
     margin: 50px;
 }
 .joke-card {
-    border-style: solid;
+    /* border-style: solid;
     background-color: antiquewhite;
     padding: 10px;
     border-radius: 2%;
@@ -71,8 +71,29 @@ body {
     height: 150px;
     width: 20%;
     float: left;
-    box-shadow: black;
+    box-shadow: black; */
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    background-color: white;
+  
+    display: block;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 30px 60px;
+    max-width: 350px;
+    width: 70%;
+    margin: 70px auto 0;
+    float: left;
+    font-size: 17px;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
 
+.joke-cont {
+    display: inline-block;
 }
 
 .joke-form  {

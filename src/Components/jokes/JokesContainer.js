@@ -14,7 +14,7 @@ class JokesContainer extends React.Component {
         return (
             <div>
               <h1>ALL JOKES</h1>
-              <div>
+              <div className="joke-cont">
                   {this.props.jokes.map(j => <JokeCard key={j.id} {...j} />)}
               </div>
          </div>
