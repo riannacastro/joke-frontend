@@ -3,8 +3,13 @@ For my final project at Flatiron School, I created a Jokester application. You w
 
 
 ## Installation
-1. Download the backend repository and follow backend steps first:
+1. IMPORTANT! Download the backend repository and follow backend steps first:
+
 Link to backend repository: https://github.com/riannacastro/joke-backend
+
+2. Download this repository
+3. Open terminal 
+4. run `npm start` in terminal. It will ask you if you want to run on a different port, please enter `y` in the terminal. It will open up localhost:3001 
 
 
 ### `npm start`
