@@ -115,6 +115,18 @@ body {
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 
+#delete-btn {
+    padding: 4px 8px;
+    display: inline-block;
+    border: 3px solid #333333;
+    
+    /* border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%; */
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+}
+
 .joke-cont {
     display: inline-block;
 }

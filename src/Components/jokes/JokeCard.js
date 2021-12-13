@@ -10,7 +10,7 @@ function JokeCard(props) {
     return (
         <div key={props.id} className="joke-card">
             {props.joke} <br />
-            <button onClick={handleDelete}>delete</button>
+            <button id="delete-btn" onClick={handleDelete}>delete</button>
         </div>
     )
 }
