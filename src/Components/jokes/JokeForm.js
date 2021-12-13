@@ -16,6 +16,7 @@ class JokeForm extends Component {
         e.preventDefault()
         this.props.addJoke(this.state)
         this.setState({joke: ""})
+        this.props.routerProps.history.push('/jokes')
     }
 
     render() {

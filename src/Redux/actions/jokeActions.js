@@ -19,7 +19,8 @@ export const addJoke = (joke) => {
             })
         })
         .then(r => r.json())
-        .then(joke => dispatch({type: "ADD_JOKE", payload: joke}))
+        .then(joke => dispatch({type: "ADD_JOKE", payload: joke})
+        )
     }
 }
 
