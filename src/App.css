@@ -127,6 +127,18 @@ body {
     position: relative;
 }
 
+#submit-btn {
+    padding: 3px 7px;
+    display: inline-block;
+    border: 3px solid #333333;
+    
+    /* border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%; */
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+}
+
 .joke-cont {
     display: inline-block;
 }

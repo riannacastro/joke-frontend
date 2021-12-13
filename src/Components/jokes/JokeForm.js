@@ -29,7 +29,7 @@ class JokeForm extends Component {
                     value={this.state.joke} 
                     type="text" 
                     placeholder="Enter joke..." />
-                <input type="submit" />
+                <input id="submit-btn" type="submit" />
             </form>
         )
     }
