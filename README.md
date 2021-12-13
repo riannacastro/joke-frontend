@@ -10,15 +10,11 @@ Link to backend repository: https://github.com/riannacastro/joke-backend
 2. Download this repository
 3. Open terminal 
 4. run `npm start` in terminal. It will ask you if you want to run on a different port, please enter `y` in the terminal. It will open up localhost:3001 
+5. You are set up to use the application! Have fun!
 
+## Usage
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The "Home" page is a welcome page to greet the user. The "About" page explains why this application was created and how to use it. The "Jokes" page has all of the jokes that you can take a look at and read! Feel free to play around and delete a joke of your choice. If you want to add a new joke, you can go to the "New Joke" page, and enter a new joke there. When clicking submit, you will be able to see your added joke on the "jokes" page.
 
 ### `npm test`
 
