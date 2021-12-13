@@ -10,19 +10,25 @@ function App() {
       <NavLink 
       to="/"
       className={isActive => isActive ? "selected" : ""}
-      id="home-link"
+      id="nav-link"
       >Home</NavLink> 
+      <br />
+      <NavLink 
+      to="/about"
+      className={isActive => isActive ? "selected" : ""}
+      id="nav-link"
+      >About</NavLink>
       <br />
       <NavLink 
       to="/jokes"
       className={isActive => isActive ? "selected" : ""}
-      id="jokes-link"
+      id="nav-link"
       >Jokes</NavLink>
       <br />
       <NavLink 
       to="/new"
       className={isActive => isActive ? "selected" : ""}
-      id="new-link"
+      id="nav-link"
       >New Joke</NavLink>
       </div>
       <Pages />
