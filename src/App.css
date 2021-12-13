@@ -3,51 +3,75 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
-    /* background-color: burlywood; */
     text-align: center;
 }
 .nav-bar{
     display: flex;
     list-style: none;
     align-items: center;
+    padding: 10px;
     min-height: 8vh;
     justify-content: space-around;
 }
 
 
 #home-link:link {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
     background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2px;
-    padding: 10px 20px;
-    display: inline-block;
+    display: block;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 30px 30px;
+    max-width: 350px;
+    width: 70%;
+    margin: 70px auto 10;
+    float: center;
+    font-size: 17px;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 
 #jokes-link:link {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
     background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2px;
-    padding: 10px 20px;
-    display: inline-block;
+    display: block;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 30px 30px;
+    max-width: 350px;
+    width: 70%;
+    margin: 70px auto 10;
+    float: center;
+    font-size: 17px;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 #new-link:link {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
     background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2px;
-    padding: 10px 20px;
-    display: inline;
+    display: block;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 30px 30px;
+    max-width: 350px;
+    width: 70%;
+    margin: 70px auto 10;
+    float: center;
+    font-size: 17px;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 
 /* .selected {
@@ -55,29 +79,11 @@ body {
 } */
 
 .home-cont {
-    border-style: solid;
-    background-color: white;
-    border-radius: 4px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 50px;
-}
-.joke-card {
-    /* border-style: solid;
-    background-color: antiquewhite;
-    padding: 10px;
-    border-radius: 2%;
-    margin: 10px;
-    height: 150px;
-    width: 20%;
-    float: left;
-    box-shadow: black; */
     border-top-left-radius: 37px 140px;
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;
     border-bottom-right-radius: 120px 24px;
     background-color: white;
-  
     display: block;
     position: relative;
     border: solid 3px #6e7491;
@@ -85,9 +91,26 @@ body {
     max-width: 350px;
     width: 70%;
     margin: 70px auto 0;
-    float: left;
+    float: center;
     font-size: 17px;
     line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+.joke-card {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    background-color: white;
+    border: solid 3px #6e7491;
+    padding: 30px 30px;
+    max-width: 250px;
+    width: 20%;
+    margin: 70px auto 10;
+    float: left;
+    font-size: 17px;
+    line-height: 20px;
     transform: rotate(-1deg);
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
@@ -97,10 +120,20 @@ body {
 }
 
 .joke-form  {
-    border-style: solid;
-    background-color: rgb(249, 215, 167);
-    display: inline-block;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 3px;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    background-color: white;
+    display: block;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 30px 60px;
+    max-width: 350px;
+    width: 70%;
+    margin: 70px auto 0;
+    float: center;
+    font-size: 17px;
+    line-height: 28px;
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
