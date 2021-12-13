@@ -11,7 +11,7 @@ export default function Pages() {
     return (
             <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route exact path="/" component={AboutPage}/>
+            <Route exact path="/about" component={AboutPage}/>
             <Route path="/jokes" component={routerProps => < JokesContainer routerProps={routerProps}/>}/>
             <Route path="/new" component={routerProps => < JokeForm routerProps={routerProps}/>}/>
             </Switch>
