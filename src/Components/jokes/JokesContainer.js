@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { setJokes } from '../../Redux/actions/jokeActions'
 import JokeCard from './JokeCard'
-import JokeForm from './JokeForm'
+
 
 class JokesContainer extends React.Component {
 
