@@ -30,6 +30,11 @@ function App() {
       className={isActive => isActive ? "selected" : ""}
       id="new-link"
       >New Joke</NavLink>
+      <NavLink 
+      to="/requests"
+      className={isActive => isActive ? "selected" : ""}
+      id="new-link"
+      >Requests</NavLink>
       </div>
       <Pages />
     </div>
