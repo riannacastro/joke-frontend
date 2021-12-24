@@ -8,6 +8,7 @@ export const setJokes = () => {
 
 export const addJoke = (joke) => {
     return (dispatch) => {
+        console.log("before fetch")
         fetch("http://localhost:3000/jokes", {
             method: "POST",
             headers: {
@@ -20,7 +21,9 @@ export const addJoke = (joke) => {
         })
         .then(r => r.json())
         .then(joke => dispatch({type: "ADD_JOKE", payload: joke})
+
         )
+        console.log("after fetch")
     }
 }
 

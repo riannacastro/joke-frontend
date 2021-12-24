@@ -14,7 +14,9 @@ class JokeForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
+        console.log("before action")
         this.props.addJoke(this.state)
+        console.log("after action")
         this.setState({joke: ""})
         this.props.routerProps.history.push('/jokes')
     }
