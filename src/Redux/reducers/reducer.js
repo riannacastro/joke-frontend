@@ -30,6 +30,13 @@ function reducer(state = {jokes: [], requests: []}, action) {
                 requests: action.payload
             };
 
+        case "ADD_REQUEST":
+
+            return {
+                ...state,
+                requests: [...state.requests, action.payload]
+            }
+
         default:
             return state;
     }

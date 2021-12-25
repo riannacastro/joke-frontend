@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { setRequests } from '../../Redux/actions/requestActions'
+import RequestForm from './RequestForm'
 import RequestsCard from './RequestsCard'
 
 class RequestsContainer extends Component {
@@ -14,6 +15,7 @@ class RequestsContainer extends Component {
     render() {
         return (
             <div>
+                < RequestForm />
                 <h1>Requests Feed:</h1>
                 {this.props.requests.map((r => <RequestsCard {...r}/>))}
             </div>
