@@ -16,8 +16,8 @@ class RequestsContainer extends Component {
         return (
             <div>
                 < RequestForm />
-                <h1>Requests Feed:</h1>
-                {this.props.requests.map((r => <RequestsCard {...r}/>))}
+                    <h1>Requests Feed:</h1>
+                    {this.props.requests.map((r => <RequestsCard {...r}/>))}
             </div>
         )
     }
