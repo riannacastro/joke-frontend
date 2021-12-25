@@ -1,4 +1,4 @@
-function reducer(state = {jokes: []}, action) {
+function reducer(state = {jokes: [], requests: []}, action) {
     switch (action.type) {
         case "SET_JOKES":
 
@@ -22,6 +22,13 @@ function reducer(state = {jokes: []}, action) {
                 ...state,
                 jokes: jokeId
             }
+
+        case "SET_REQUESTS":
+
+            return {
+                ...state, 
+                requests: action.payload
+            };
 
         default:
             return state;

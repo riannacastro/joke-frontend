@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function RequestsCard() {
+function RequestsCard(props) {
     return (
-        <div>
-            
+        <div key={props.id} className="joke-card">
+            {props.username}:
+            <br />
+            {props.request}
         </div>
     )
 }
+export default RequestsCard
