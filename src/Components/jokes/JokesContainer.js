@@ -13,11 +13,14 @@ class JokesContainer extends React.Component {
 
     handleSearch = (search) => {
         console.log(search)
+        // const searchInput = search.length !== 0
         // const filterJokes = this.state.jokes.filter(j => j.joke.toLowerCase().includes(search.toLowerCase()))
-        this.setState({
-            jokes: this.state.jokes.filter(j => j.joke.toLowerCase().includes(search.toLowerCase()))
-            // state.jokes.filter(j => j.includes.toLowerCase())
+        // if (search.length > 0)
+         this.setState({
+            jokes: this.props.jokes.filter(j => j.joke.toLowerCase().includes(search.toLowerCase()))
         })
+        
+        // return this.state
         // return this.state.jokes.map(joke => <JokeCard joke={joke} />)
     }
 
@@ -27,13 +30,26 @@ class JokesContainer extends React.Component {
     }
 
     render(){
+        // if (this.state) {
+        //     return (
+        //         {this.props.jokes.map(j => <JokeCard key={j.id} {...j} />)}
+        //     )
+        // }
+        // const all = this.props.jokes
+        // const filter = this.state.jokes
         return (
             <div>
               <h1>ALL JOKES</h1>
-              <div className="joke-cont">
-                  {this.props.jokes.map(j => <JokeCard key={j.id} {...j} />)}
-                  < SearchBar handleSearch={this.handleSearch} />
-                  {/* {filteredJokes={this.state}} */}
+              < SearchBar handleSearch={this.handleSearch} /> <br />
+              {/* <div>
+                {filter
+                    ? filter.map(f => <JokeCard key={f.id} {...f} />)
+                    : all.map(j => <JokeCard key={j.id} {...j} />)
+                }
+              </div> */}
+              <div >
+                  {this.state.jokes.map(j => <JokeCard key={j.id} {...j} />)}
+                  {/* <h2>search results: {this.state.jokes.map(filter => <JokeCard key={filter.id} {...filter} />)}</h2> */}
               </div>
          </div>
         )

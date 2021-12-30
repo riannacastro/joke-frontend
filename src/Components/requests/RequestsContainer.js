@@ -3,8 +3,19 @@ import { connect } from 'react-redux'
 import { setRequests } from '../../Redux/actions/requestActions'
 import RequestForm from './RequestForm'
 import RequestsCard from './RequestsCard'
+import Search from './Search'
 
 class RequestsContainer extends Component {
+
+    state = {
+        requests: this.props.requests
+    }
+
+    handleRequests = (search) => {
+        this.setState({
+            requests: this.props.requests.filter((r => r.request.toLowerCase().includes(search.toLowerCase())))
+        })
+    }
 
 
     componentDidMount() {
@@ -17,7 +28,8 @@ class RequestsContainer extends Component {
             <div>
                 < RequestForm />
                     <h1>Requests Feed:</h1>
-                    {this.props.requests.map((r => <RequestsCard {...r}/>))}
+                    < Search handleRequests={this.handleRequests}/>
+                    {this.state.requests.map((r => <RequestsCard key={r.id} {...r}/>))}
             </div>
         )
     }
