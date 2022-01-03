@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 export default class Search extends Component {
 
     state = {
@@ -12,7 +13,6 @@ export default class Search extends Component {
             this.props.handleRequests(this.state.search)
         })
     }
-
 
     render() {
         return (

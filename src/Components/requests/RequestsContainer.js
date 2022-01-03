@@ -17,19 +17,17 @@ class RequestsContainer extends Component {
         })
     }
 
-
     componentDidMount() {
         this.props.dispatchSetRequests()
     }
-
 
     render() {
         return (
             <div>
                 < RequestForm />
                     <h1>Requests Feed:</h1>
-                    < Search handleRequests={this.handleRequests}/>
-                    {this.state.requests.map((r => <RequestsCard key={r.id} {...r}/>))}
+                    <Search handleRequests={this.handleRequests} />
+                    {this.state.requests.map((r => <RequestsCard key={r.id} {...r} />))}
             </div>
         )
     }
