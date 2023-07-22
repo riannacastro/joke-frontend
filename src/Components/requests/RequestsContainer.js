@@ -23,12 +23,18 @@ class RequestsContainer extends Component {
 
     render() {
         return (
-            <div>
-                < RequestForm />
-                    <h1>Requests Feed:</h1>
-                    <Search handleRequests={this.handleRequests} />
-                    {this.state.requests.map((r => <RequestsCard key={r.id} {...r} />))}
-            </div>
+            <>
+                <div className='flex-col justify-center mt-10'>
+                    <h1 className='text-[36px]'>Feedback:</h1>
+                    {/* <Search handleRequests={this.handleRequests} /> */}
+                </div>
+                <div className='flex justify-evenly'>
+                    <RequestForm />
+                        <div className='grid gap-2 justify-center'>
+                            {this.state.requests.map((r => <RequestsCard key={r.id} {...r} />))}
+                        </div>
+                </div>
+            </>
         )
     }
 }

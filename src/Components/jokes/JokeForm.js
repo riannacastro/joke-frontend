@@ -5,12 +5,12 @@ import { connect } from 'react-redux';
 class JokeForm extends Component {
     state = {
         joke: ""
-    }
+    };
 
     handleChange = (e) => {
         this.setState({joke: e.target.value})
         
-    }
+    };
 
     handleSubmit = (e) => {
         e.preventDefault()
@@ -19,7 +19,7 @@ class JokeForm extends Component {
         console.log("after action")
         this.setState({joke: ""})
         this.props.routerProps.history.push('/jokes')
-    }
+    };
 
     render() {
         return (
@@ -35,12 +35,12 @@ class JokeForm extends Component {
             </form>
         )
     }
-}
+};
 
 function mapDispatchToProps(dispatch) {
     return {
         addJoke: (joke) => dispatch(addJoke(joke))
     }
-}
+};
 
-export default connect(null, mapDispatchToProps)(JokeForm)
+export default connect(null, mapDispatchToProps)(JokeForm);

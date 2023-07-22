@@ -26,7 +26,7 @@ class RequestForm extends Component {
 
     render() {
         return (
-            <form className="request-form" onSubmit={this.handleSubmit}>
+            <form className="flex-col bg-white w-[600px] h-[200px] rounded-lg mt-20" onSubmit={this.handleSubmit}>
                 <h1>What other joke topics would you like to see?<br />Add to our feed below!</h1>
                 <label>Nickname: </label>
                 <input 
@@ -46,7 +46,7 @@ class RequestForm extends Component {
                     placeholder="ex: Random Jokes"
                 />
                 <br />
-                <input id="submit-btn" type="submit" />
+                <input className='cursor-pointer mt-10' id="submit-btn" type="submit" />
             </form>
         )
     }

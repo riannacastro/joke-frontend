@@ -16,7 +16,7 @@ export default class Search extends Component {
 
     render() {
         return (
-            <div>
+            <div className="flex box-border w-[400px] mt-10 bg-white p-4 rounded-lg">
             <form>
                 <label>Search: </label>
                 <input type="text" value={this.state.search} onChange={this.handleChange} placeholder="search..."/>

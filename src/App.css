@@ -10,6 +10,7 @@ body {
     list-style: none;
     align-items: center;
     padding: 10px;
+    gap: 10px;
     min-height: 8vh;
     justify-content: space-around;
 }
@@ -202,20 +203,13 @@ body {
     transform: rotate(-1deg);
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
-/* .selected {
-    background-color: thistle;
-    color: blue;
-} */
 
 .home-cont {
-    border-top-left-radius: 37px 140px;
-    border-top-right-radius: 23px 130px;
-    border-bottom-left-radius: 110px 19px;
-    border-bottom-right-radius: 120px 24px;
     background-color: white;
     display: block;
     position: relative;
     border: solid 3px #6e7491;
+    border-radius: 25px;
     padding: 30px 60px;
     max-width: 350px;
     width: 70%;
@@ -223,7 +217,7 @@ body {
     float: center;
     font-size: 17px;
     line-height: 28px;
-    transform: rotate(-1deg);
+    /* transform: rotate(-1deg); */
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 .joke-card {
@@ -260,7 +254,7 @@ body {
     padding: 3px 7px;
     display: inline-block;
     border: 3px solid #333333;
-    
+    border-radius: 10px;
     /* border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%; */
     text-transform: uppercase;
     letter-spacing: 0.3ch;
@@ -269,7 +263,10 @@ body {
 }
 
 .joke-cont {
-    display: inline-block;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .joke-form  {

@@ -6,7 +6,7 @@ import Pages from './Components/Pages';
 function App() {
   return (
     <div className="App">
-      <div className="nav-bar">
+      <div className="flex mt-8 justify-center gap-4">
       <NavLink 
       to="/"
       className={isActive => isActive ? "selected" : ""}
@@ -25,16 +25,16 @@ function App() {
       id="joke-link"
       >Jokes</NavLink>
       <br />
-      <NavLink 
+      {/* <NavLink 
       to="/new"
       className={isActive => isActive ? "selected" : ""}
       id="new-link"
-      >New Joke</NavLink>
+      >New Joke</NavLink> */}
       <NavLink 
       to="/requests"
       className={isActive => isActive ? "selected" : ""}
       id="new-link"
-      >Requests</NavLink>
+      >Feedback</NavLink>
       </div>
       <Pages />
     </div>
